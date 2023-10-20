@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        p{
+            color: rgb(206, 203, 210);
+        }
+        .container {
+            background-color: rgb(60, 0, 128);
+            color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn{
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: white;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Reminder: Code Far</h1><br>
+        <h4>Dear {{ recipientName }}</h4><br>
+        <h5>Warm Greetings.</h5>
+        <p>Kindly be reminded {{ taskName }} is due to be delivered by {{ dueDateTime }}.<br>
+            There are {{ hoursOrDaysToDelivery }} left before this task is due<br>
+            Thank You.</p>
+        <button type="button" class="btn">Complete Task</button><br>
+        <hr>
+        <h4>Prolific</h4>
+        <p>Even if it skipped your mind, we got you covered</p>
+        <p>Profilic<br>
+        1187Hunterwasser Street<br>
+        &copy; 2023 All rights reserved.</p>
+    </div>
+</body>
+</html>
